@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>香港大学 2027 申请指南</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -webkit-tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      user-select: none;
+      background: #f4f6f8;
+      color: #12263a;
+    }
+  </style>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="head">
+      <h1>香港大学 2027 申请指南</h1>
+      <p class="sub">国际课程：IB · A-Level · SAT / AP</p>
+      <p class="today" id="today"></p>
+    </header>
+
+    <nav class="nav">
+      <button type="button" class="navbtn active" id="nav-countdown">倒计时</button>
+      <button type="button" class="navbtn" id="nav-programs">查专业与学费</button>
+    </nav>
+
+    <main>
+      <!-- 倒计时 -->
+      <section id="view-countdown">
+        <div class="hero">
+          <div class="hero-label" id="cd-mode">首轮截止</div>
+          <div class="hero-cd" id="cd-big">计算中…</div>
+          <div class="hero-date" id="cd-deadline">2026.11.25 中午 12:00</div>
+        </div>
+
+        <h2 class="sec">关键时间点</h2>
+        <ul class="timeline">
+          <li><span class="tl-k">申请开放</span><span class="tl-v">2026.09.23</span></li>
+          <li><span class="tl-k">首轮截止</span><span class="tl-v">2026.11.25 中午 12:00</span></li>
+          <li><span class="tl-k">预测成绩及证明文件截止</span><span class="tl-v">2026.12.01</span></li>
+          <li><span class="tl-k">首轮结果</span><span class="tl-v">2026年12月起</span></li>
+          <li><span class="tl-k">全部截止</span><span class="tl-v">2027.08.25 中午 12:00</span></li>
+        </ul>
+        <p class="note">首轮之后滚动录取。申请费 HK$780（一次，不退），每份申请最多选 3 个专业。</p>
+
+        <button type="button" class="cta" id="goto-programs">查专业录取线与学费 →</button>
+      </section>
+
+      <!-- 查专业与学费 -->
+      <section id="view-programs" class="hidden">
+        <h2 class="sec">1 · 选学院</h2>
+        <div class="chips" id="faculty-chips"></div>
+
+        <h2 class="sec">2 · 选专业</h2>
+        <div class="plist" id="program-list">
+          <p class="hint">先选一个学院</p>
+        </div>
+
+        <div class="detail hidden" id="detail">
+          <h2 class="sec">3 · 录取要求与学费</h2>
+          <div class="d-name" id="d-name"></div>
+          <div class="d-en" id="d-en"></div>
+          <div class="d-faculty" id="d-faculty"></div>
+
+          <div class="seg" id="cat-seg">
+            <button type="button" class="segbtn" id="cat-local">本地学生</button>
+            <button type="button" class="segbtn active" id="cat-nonlocal">非本地学生</button>
+          </div>
+          <div class="fee" id="d-fee"></div>
+          <div class="feetotal hidden" id="d-total"></div>
+          <div class="appfee">申请费 HK$780（一次，不退）</div>
+
+          <div class="seg" id="cur-seg">
+            <button type="button" class="segbtn active" id="cur-ib">IB</button>
+            <button type="button" class="segbtn" id="cur-al">A-Level</button>
+            <button type="button" class="segbtn" id="cur-sat">SAT / AP</button>
+          </div>
+          <div class="req" id="d-req"></div>
+          <div class="rule" id="d-rule"></div>
+          <div class="chg hidden" id="d-chg"></div>
+          <div class="eng">英语：雅思 6.5（写作、口语≥6.0，同一次考试），或 IB English A 5 分。</div>
+          <div class="disclaimer">分数为预期下限，达线不保证录取；另看面试、个人陈述、推荐信及先修科目。</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>数据来源：香港大学官网（2026年11月核查）</p>
+      <p class="footline"><span>仅供参考，请以官网最新公布为准。跨学院双学位的学费分类请以官网为准。</span><span class="copyright">© J.G.</span></p>
+    </footer>
+  </div>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
