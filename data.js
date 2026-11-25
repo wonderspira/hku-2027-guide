@@ -19,7 +19,7 @@ var HKU_DATA = {
       { name: '人文与数字科技文学士', en: 'Bachelor of Arts in Humanities and Digital Technologies', ib: 34, al: '1A*2A', sat: '3门AP（3分）+SAT 1380，或 5门AP（3分）', fee: 'nonstem', chgIb: 'IB 32→34 ↑', chgAl: 'A-Level 3A→1A*2A ↑', chgSat: null },
       { name: '文学士及工学士（人工智能与数据科学）', en: 'Bachelor of Arts and Bachelor of Engineering in Artificial Intelligence and Data Science', ib: 37, al: '2A*1A', sat: '3门AP（5分）+SAT 1400，或 3门AP（5分）+2门AP（4分）', fee: 'nonstem', chgIb: null, chgAl: 'A-Level 3A→2A*1A ↑', chgSat: null }
     ]},
-    { id: 'business', name: '商学院', programs: [
+    { id: 'business', name:经管学院', programs: [
       { name: '工商管理学士', en: 'Bachelor of Business Administration', ib: 38, al: '3A*', sat: '4门AP（5分）+SAT 1500，或 6门AP（5分）', fee: 'nonstem', chgIb: 'IB 36→38 ↑', chgAl: 'A-Level 3A→3A* ↑', chgSat: 'SAT 1470→1500，第二档改为 6AP（5分）' },
       { name: '经济学 / 经济金融', en: 'Bachelor of Economics / Bachelor of Economics and Finance', ib: 38, al: '3A*', sat: '4门AP（5分）+SAT 1500，或 6门AP（5分）', fee: 'nonstem', chgIb: 'IB 36→38 ↑', chgAl: 'A-Level 3A→3A* ↑', chgSat: 'SAT 1470→1500，第二档改为 6AP（5分）' },
       { name: '会计与金融 / 会计数据分析', en: 'Bachelor of Business Administration in Accounting and Finance / Accounting Data Analytics', ib: 38, al: '3A*', sat: '4门AP（5分）+SAT 1500，或 6门AP（5分）', fee: 'nonstem', chgIb: 'IB 36→38 ↑', chgAl: 'A-Level 3A→3A* ↑', chgSat: 'SAT 1470→1500，第二档改为 6AP（5分）' },
